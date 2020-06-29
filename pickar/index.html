@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pickar Coding Challenge</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="script.js">
+        
+    </head>
+    <body>
+        <div id="upper-body" class="container">
+        <h1>pickar</h1>   
+        <p class="headline">Convert Currencies in real-time.</p> 
+            <div class="box-background">
+            
+            <div id="box" class="first">
+                <label class="name1">Amount</label>
+                <input type="text" class="background" id="amount" value="1.00"/>
+            </div>
+            
+            <div id="box" class="second">
+                <label class="name2">From</label>
+                <select class="background" id="from" name="from">
+                    <option value="EUR">Euro</option>
+                    <option value="USD">USD</option>
+                    <option value="CHF">CHF</option>
+                </select>
+            </div>
+            <div id="box" class="third">
+                <p> icon</p>
+            </div>
+            
+            <div id="box" class="fourth">
+                <label class="name3">To</label>
+                <select class="background" id="to" name="to">
+                    <option value="USD">USD</option>
+                    <option value="EUR">Euro</option>
+                    <option value="CHF">CHF</option>
+                </select>
+            </div>
+            
+            <div id="box" class="fifth">
+                <button class="button-background" onclick="conversion()">Convert</button>
+            </div>
+            
+        </div> 
+        
+            
+        </div>
+        <div id="lower-body" class="container">
+            <div id="view"> <a href="#">view conversion history></a> </div>
+            <div class="result">
+            <p class="lower">
+                <span id="number">1</span>
+                <span id="currencyFrom">EUR</span>
+                <span>=</span>
+            </p>
+            <p class="lower2">
+                <span id="result">1.12</span>
+                <span id="currencyTo">USD</span>
+            </p>
+        </div>
+        </div>
+        
+        <script>
+            function conversion() {
+                var x = document.getElementById("amount").value;
+                var y = document.getElementById("from").value;
+                var z = document.getElementById("to").value;
+                var w;
+                if(x == 1.00) x=1;  
+                if(y == "EUR") {
+                    if(z == "USD"){
+                        w = x*1.12;
+                    }
+                    else if(z == "CHF"){
+                        w = x*1.07;
+                    }
+                    else w = x;
+                    
+                }
+                if(y == "USD") {
+                    if(z == "EUR"){
+                        w = x*0.89;
+                    }
+                    else if(z == "CHF"){
+                        w = x*0.95;
+                    }
+                    else w = x;
+                }
+                if(y == "CHF") {
+                    if(z == "EUR"){
+                        w = x*0.94;
+                    }
+                    else if(z == "USD"){
+                        w= x*1.05;
+                    }
+                    else w = x;
+                }
+                
+                document.getElementById("number").innerHTML = x;
+                document.getElementById("currencyFrom").innerHTML = y;
+                document.getElementById("result").innerHTML = w;
+                document.getElementById("currencyTo").innerHTML = z;
+            }
+        
+        </script>
+    
+    </body>
+</html>
