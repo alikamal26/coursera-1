@@ -1,0 +1,22 @@
+.blog-bio{
+    grid-area: e;
+    font-size: 16px;
+}
+#blog-text{
+    text-align: center;
+}
+#blog-social a:hover{
+    text-decoration: none;
+}
+#blog-social{
+    color: #021533;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media(max-width:750px){
+    .blog-bio{
+        margin-top: -10%;
+    }
+}

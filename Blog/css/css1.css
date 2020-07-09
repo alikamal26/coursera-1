@@ -1,0 +1,72 @@
+#home-bio{
+    grid-area: rd;
+    text-align: center;
+    margin-bottom: 25px;
+    height: 100%;
+    margin-top: 3%;
+    padding-left: 5%;
+}
+.home-profile-title{
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 36px;
+    letter-spacing: -2px;
+    color: #021533;
+}
+.home-profile-subtitle{
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.home-hr1{
+    height: 1px;
+    width: 100%;
+    margin-top: 10px;
+}
+.home-description{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.home-mail{
+    background-color: #08acae;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    
+}
+
+#home-bio a{
+    margin-top: 10px;
+    border-radius: 10%;
+    margin-left: 3%;
+}
+#home-bio a:hover{
+    background-color: white;
+    text-decoration: none;
+}
+.fa{
+    padding: 20px;
+    width: 50px;
+}
+.fa-facebook{
+    color: white;
+    background:#3B5998;
+}
+.fa-twitter{
+    background: #55ACEE;
+    color: white;    
+}
+.fa-linkedin{
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram{
+  background: #125688;
+  color: white;
+}
